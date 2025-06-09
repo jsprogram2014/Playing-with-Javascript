@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function editElement(){
+                var jsChanger=document.getElementById("heading2");
+                jsChanger.innerHTML="Hello Edited World <button >Revert Me</button>"
+
+                // changing the style
+                jsChanger.style.color="red"
+
+                // changing the style using attribute
+                jsChanger.setAttribute("style","font-size:10px")
+
+                // removing an attribute using js
+                var jsChanger02=document.getElementById("heading3");
+                jsChanger02.removeAttribute("style");
+
+            }
+        </script>
+    </head>
+    <body onload="addPara()">
+        <h2 id="heading2" >Hello World</h2>
+        <h3 id="heading3" style="color:blue;">Hello Another World</h3>
+        <button type="button" onclick="editElement()" >Click Me</button>
+    </body>
+</html>
