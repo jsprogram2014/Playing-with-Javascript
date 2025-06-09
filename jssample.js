@@ -27,3 +27,9 @@ function Car(make,model,year){
 var honda= new Car("suv","v3",2010);
 console.log(honda.getName());
 console.log(honda.make)
+
+// creating prototypes
+Car.prototype.color
+honda.color="blue"
+console.log(honda)
+
